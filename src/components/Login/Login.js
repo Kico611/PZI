@@ -35,7 +35,7 @@ function Login({ setLoggedIn }) {
         }
 
         try {
-            const response = await fetch(' http://gamingshop.studenti.sum.ba/register', {
+            const response = await fetch('http://gamingshop.studenti.sum.ba/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username: registerData.username, password: registerData.password })
@@ -55,7 +55,7 @@ function Login({ setLoggedIn }) {
 
     const handleLogin = async () => {
         try {
-            const response = await fetch(' http://gamingshop.studenti.sum.ba/login', {
+            const response = await fetch('http://gamingshop.studenti.sum.ba/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(loginData)
